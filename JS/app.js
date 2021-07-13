@@ -19,3 +19,23 @@ var enlaces = document.getElementById("enlaces");
     menuResponsive.classList.remove("active");
   });
 
+// CAMBIO DE MENU PARA SECCIONES DEL POTFOLIO
+
+var menuPricipal = document.getElementById("menuPrincipal");
+var enlaceProyectos = document.getElementById("proyectos");
+var enlaceHome = document.getElementById("home");
+var enlaceContacto = document.getElementById("contacto");
+
+enlaceProyectos.addEventListener("click", function (){
+  menuPricipal.classList.add("black")
+});
+
+enlaceHome.addEventListener("click", function (){
+  menuPricipal.classList.remove("black")
+});
+
+enlaceContacto.addEventListener("click", function (){
+  menuPricipal.classList.add("black")
+});
+
+
