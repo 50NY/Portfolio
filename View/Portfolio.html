@@ -11,7 +11,9 @@
 </head>
   <body>
 
-    <div class="menu-principal active" id="menuPrincipal">
+    <!--MENU PRINCIPAL -->
+
+    <div class="menu-principal" id="menuPrincipal">
 
       <div class="nombre">
         <h2>Juan Fernandez</h2>
@@ -45,6 +47,7 @@
 
           <h1>Juan Fernandez</h1>
           <h2>Soy un Desarrollador Web apasionado </h2>
+          <div class="Subrayado"></div>
     
           <div class="redes-sociales">
             <a href="#"><span class="fab fa-facebook"></span></a>
@@ -54,10 +57,8 @@
           </div>
     
         </div>
-    
-        <div class="Subrayado"></div>
 
-       <img src="..//Imagenes/Imagen-perfil.png" alt="">
+       <img class="img-perfil" src="..//Imagenes/Imagen-perfil.png" alt="">
     
       </div>
       
@@ -70,9 +71,44 @@
     <section id="Proyectos">
 
       <div class="contenedor-proyectos">
-        <div class="biblioteca"> 
+
+        <div class="biblioteca">
+          <!--
+          <div class="contenedor-tarjeta">
+            <figure>
+              <img class="frontal" src="../Imagenes/Tarjetas de Proyectos/Aves-Card.png" alt="">
+              <figcaption class="trasera">
+                <h2>Aves</h2>
+                <p>Proyecto obligatorio presentado como requisito de la materia Progrmacion 2 en facultad Ort Uruguay.
+                  El proyecto  </p>
+              </figcaption>
+            </figure>
+          </div>
+          -->
+          <a  class="proyecto" href="#">
+            <div class="about">
+              <div>
+                <img src="..//Imagenes/Tarjetas de Proyectos/Aves-card.png" alt="">
+              </div>
+              <h2>Aves</h2>
+              <div class="separador"></div>
+              <p>Proyecto realizado en Java como requisito de la materia Progrmacion 2.</p>
+            </div>
+          </a>
+
+          <a  class="proyecto" href="#">
+            <div class="about">
+              <div>
+                <img src="..//Imagenes/Tarjetas de Proyectos/Aves-card.png" alt="">
+              </div>
+              <h2>PcBuilders</h2>
+              <div class="separador"></div>
+              <p>Pagina web realizada como proyecto para curso de Udemy</p>
+            </div>
+          </a>
 
         </div>
+
       </div>
 
     </section>

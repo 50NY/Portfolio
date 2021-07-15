@@ -28,7 +28,7 @@ body{
 
 .menu-principal{
   width: 100%;
-  height: 50px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -43,15 +43,16 @@ body{
 }
 
 .black .nombre{
-
-  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13%;
   height: 50px;
-  margin-top: 25px;
   visibility: visible;
 }
 
 .black .nombre h2{
-  font-size: 4vh;
+  font-size: 30px;
   color: #fff;
 }
 
@@ -108,7 +109,7 @@ color: var(--color-principal);
  
 .info{
   position: absolute;
-  top: 600px;
+  top: 700px;
   left: 150px;
   width: 800px;
   height: 250px;
@@ -153,10 +154,18 @@ color: var(--color-principal);
 
 .Subrayado{
   position: absolute;
-  top: 740px;
-  left: 257px;
-  width: 245px;
+  top:128px;
+  left: 100px;
+  width: 254px;
   border-bottom: 1px solid var(--color-principal);
+}
+
+.img-perfil{
+  width: 940px;
+  height: 1300px;
+  top: 0px;
+  right: 0px;
+  position: fixed;
 }
 
 
@@ -169,20 +178,115 @@ color: var(--color-principal);
   align-items: center;
 }
 
-.navegando{
-  background: #000;
-  opacity: 0.8;
-  height: 50px;
-}
 
 .biblioteca{
   width: 95%;
-  height: 85%;
-  margin-top: 40px;
-  background: #000;
-  opacity: 0.8;
+  height: 90%;
+  margin-top: 50px;
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
+
+.proyecto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 370px;
+  background-color: rgba(45, 45, 45, 0.8);
+  margin: 30px 30px;
+  transition: all 0.5s;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.proyecto:hover{
+  background-color: var(--color-principal);
+}
+
+.proyecto:hover img{
+  filter: grayscale(0);
+}
+
+.about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.about .separador{
+  width: 60%;
+  height: 1px;
+  background-color: var(--color-principal);
+  margin: 8px 0;
+  transition: 0.5s;
+}
+
+.about p{
+  margin-top: 15px;
+}
+
+.about img{
+  filter: grayscale();
+  transition: all 0.5s;
+}
+
+
+/*
+.contenedor-tarjeta{
+  margin: 20px;
+  width: 353px;
+  height: 606px;
+}
+
+.contenedor-tarjeta:hover figure{
+  transform: perspective(600px) rotateY(180deg);
+}
+
+
+figure{
+  width: 353px;
+  height: 606px;
+  margin: 0;
+  position: relative;
+  transition: all .5s;
+  transform-style:preserve-3d;
+  transform:perspective(600px) rotateY(0deg);
+}
+
+figure .fontal,
+figure .trasera{
+  width: 100%;
+  height: 100%;
+  transition: all .5s;
+}
+
+
+figure .trasera{
+  position: absolute;
+  top: 0;
+  padding: 20px;
+  color: #fff;
+  border: solid var(--color-principal) 2px;
+  background: black;
+  border-radius: 3%;
+  transform: perspective(600px) rotateY(180deg);
+  backface-visibility: hidden;
+  overflow: auto;
+}
+*/
+
+
+
+
 
 /*Estilos de la seccion Contacto*/
 
@@ -250,6 +354,7 @@ color: var(--color-principal);
     width: 245px;
     border-bottom: 1px solid var(--color-principal);
   }
+
 
 }
 
